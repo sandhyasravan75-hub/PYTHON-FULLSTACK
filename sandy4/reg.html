@@ -1,0 +1,58 @@
+<html>
+	<head> 
+		<title>Student Registration Form</title>
+	</head>	
+	<body>
+		<form>
+		<table border="2"> 
+			<tr> 
+				<th colspan="2">Student info </th>
+			</tr>
+			<tr> 
+			<td>ID</td>
+			<td><input type="number" name="i" /></td>
+			</tr>
+			<tr>
+			<td>Name</td>
+			<td><input  type="text name="n"/></td>
+			</tr>
+			<tr> 
+				<td> Branch</td>
+				<td>
+					<select name="b">
+						<option value="CSE"> CSE</option>
+						<option value="ECE">ECE </option>
+						<option value="EEE">EEE </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+				<input type="radio" value="Male" name="g" id="m"/> 
+				<label for="m">Male</label>
+				<input type="radio" value="Female" name="g" id="f"/> 
+				<label for="f">Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>
+				<textarea name="add" rows="10" cols="30"></textarea> 
+				</td>
+			</tr>
+			<tr>
+				<td>DOB</td>
+				<td> 
+				<input type="date" name="dob" />
+				</td>
+			</tr>
+			<tr>
+				<td> <input type="reset"/></td>
+				<td> <input type="submit"/></td>
+			</tr>
+
+		</table>
+		</form>
+	</body>
+</html>

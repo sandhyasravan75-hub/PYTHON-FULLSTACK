@@ -1,0 +1,17 @@
+*univrsal */ 
+* {
+  color: green;
+}
+/* element and group*/
+h1,
+p {
+  color: brown;
+  text-decoration: underline;
+}
+/* id */
+h1#s {
+  color: red;
+}
+h1#e {
+  color: blue;
+}
