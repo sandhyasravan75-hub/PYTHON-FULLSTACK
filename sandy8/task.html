@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: green;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .parent > div {
+            font-size: 100px;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+        .child1 {
+            background-color: blueviolet;
+           
+        }
+        .child2 {
+            background-color: yellow;
+           
+        }
+        .child3 {
+            background-color: blue;
+                    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+</html>

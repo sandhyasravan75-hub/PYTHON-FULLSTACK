@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+}
+header {
+    height: 200px;
+    background-color: purple;
+
+}
+nav {
+    background-color: maroon;
+    height: 100px;
+}
+main {
+    background-color: red;
+    height: 400px;
+    display: flex
+}
+main > .card1 { 
+    height: 70% ;
+    width: 50%;
+}
+main > .card2 {
+    background-color: green;
+    width: 50%;
+    display: flex;
+
+}
+.card1 > section {
+    background-color: yellow;
+    height: 60%;
+}
+footer {
+    background-color: aqua;
+    height: 90px;
+}
+header,nav,section,article,aside,footer {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+    
