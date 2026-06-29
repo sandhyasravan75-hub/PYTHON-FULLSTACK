@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav {
+        margin-top: 20px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #quicklinks {
+        margin-left: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 800px;
+      }
+
+      #quicklinks > li {
+        font-size: 20px;
+        list-style-type: none;
+      }
+
+      #quicklinks > li:hover {
+        color: red;
+      }
+      #quicklinks > li:nth-child(2) {
+        color: red;
+      }
+
+      #quicklinks > li:nth-child(1) {
+        color: black;
+      }
+      #quicklinks > li:first-child {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      #logo {
+        color: blue;
+      }
+
+      .right {
+        margin-right: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 240px;
+      }
+
+      .right > button {
+        background-color: rgb(53, 53, 155);
+        color: white;
+        padding: 15px;
+        border: none;
+        font-size: 20px;
+        border-radius: 15px;
+        width: 150px;
+        height: 60px;
+      }
+
+      .right > button:hover {
+        outline: 4px solid lightblue;
+      }
+      .right > h1 {
+        color: rgb(229, 57, 57);
+        font-size: 28px;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        background-color: rgb(234, 238, 241);
+        text-align: center;
+        font-weight: 100;
+      }
+      .right > h1:hover {
+        background-color: rgb(229, 57, 57);
+        color: white;
+      }
+      #drop-down {+
+        position: relative;
+      }
+
+      #drop-down ol {
+        list-style-type: none;
+        background-color: rgb(242, 242, 247);
+        width: 150px;
+        padding: 20px;
+        line-height: 50px;
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: -35px;
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+
+      #drop-down:hover ol {
+        display: block;
+        color: black;
+      }
+      #drop-down:hover ol > li:hover {
+        background-color: rgb(201, 210, 218);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="left">
+        <ol id="quicklinks">
+          <li><span id="logo">Digit</span>Marketing</li>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li id="drop-down">
+            Pages
+            <ol>
+              <li>Blog Page</li>
+              <li>Landing Page</li>
+              <li>Elements Page</li>
+              <li>404 Page</li>
+            </ol>
+          </li>
+          <li>Contact</li>
+        </ol>
+      </div>
+      <div class="right">
+        <h1>🔍︎</h1>
+        <button>Purchase</button>
+      </div>
+    </div>
+  </body>
+</html>

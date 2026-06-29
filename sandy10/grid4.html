@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 400px;
+            width: 600px;
+            border: 10px solid black;
+            background-color: purple;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            padding: 5px;
+        }
+        .child1, .child2, .child6 {
+            background-color: green;
+
+        }
+        .child3, .child5, .child7 {
+            background-color: red;
+        }
+        .child4, .child8 {
+            background-color: yellow;
+        }
+        .child1 {
+            grid-row: span 3;
+        }
+        .child2 {
+            grid-column: span 2;
+        }
+        .child6 {
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+          <div class="child1">1</div>
+          <div class="child2">2</div>
+          <div class="child3">3</div>
+          <div class="child4">4</div>
+          <div class="child5">5</div>
+          <div class="child6">6</div>
+          <div class="child7">7</div>
+          <div class="child8">8</div>
+    </div>
+    
+</body>
+</html>
