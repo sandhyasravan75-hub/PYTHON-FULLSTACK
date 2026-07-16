@@ -1,0 +1,73 @@
+<!---<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myform">
+      <input name="name" type="text" placeholder="enter name" />
+      <input name="pass" type="text" placeholder="enter pass" />
+      <button type="submit">click</button>
+    </form>
+    <h1 id="rn"></h1>
+    <h1 id="rp"></h1>
+    <script>
+      let f = document.getElementById("myform");
+      f.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alter("Just chill Bro!!");
+        let name = document.getElementById("n");
+        let pass = document.getElementById("p");
+        let rename = document.getElementById("rn");
+        let rpass = document.getElementById("p");
+
+        rname.innerText = name.value;
+        rpass.innerText = pass.value;
+      });
+    </script>
+  </body>
+</html>
+<!----->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="myform">
+      <input name="name" type="text" id="n" placeholder="enter name" />
+      <input name="pass" type="text" id="p" placeholder="enter pass" />
+      <button type="submit">click</button>
+    </form>
+    <h1 id="rn"></h1>
+    <h1 id="rp"></h1>
+
+    <script>
+      let f = document.getElementById("myform");
+      f.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("hey bruhh you submited form!!!!!");
+        let name = document.getElementById("n");
+        let pass = document.getElementById("p");
+        let rname = document.getElementById("rn");
+        let rpass = document.getElementById("rp");
+
+        rname.innerText = name.value;
+        rpass.innerText = pass.value;
+      });
+    </script>
+  </body>
+</html>

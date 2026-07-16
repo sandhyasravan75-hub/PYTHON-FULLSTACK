@@ -1,0 +1,56 @@
+<!--<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addEle()">add</button>
+    <script>
+      function addEle() {
+        let data = document.createElement("data").value;
+        let h = document.createElement("h1");
+        h.innerText = data;
+        document.body.appendChild(h);
+      }
+    </script>
+  </body>
+</html>
+<!-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #list-item {
+        background-color: blueviolet;
+        width: 50vw;
+      }
+      #list-item > li {
+        color: red;
+        font-size: 20px;
+        list-style-type: decimal;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="inputData" type="text" />
+    <button onclick="addEle()">Add</button>
+    <ul id="list-item">
+      <li>sandhya!!!!!</li>
+    </ul>
+    <script>
+      function addEle() {
+        let data = document.getElementById("inputData").value;
+        let item = document.createElement("li");
+        item.innerHTML = "<b>" + data + "</b>";
+
+        let parentItem = document.getElementById("list-item");
+        parentItem.appendChild(item);
+      }
+    </script>
+  </body>
+</html>

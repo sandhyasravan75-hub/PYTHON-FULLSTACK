@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        border: 10px solid orangered;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h">This is Sandhya!!!!</h1>
+    <script>
+      let ele = document.getElementById("h");
+      ele.addEventListener("click", function () {
+        document.body.style.backgroundColor = "green";
+      });
+      ele.addEventListener("dbclick", function () {
+        document.body.style.backgroundColor = "pink";
+      });
+      ele.addEventListener("mouseup", function () {
+        document.body.style.backgroundColor = "blue";
+      });
+      ele.addEventListener("mousedown", function () {
+        document.body.style.backgroundColor = "yellow";
+      });
+    </script>
+  </body>
+</html>

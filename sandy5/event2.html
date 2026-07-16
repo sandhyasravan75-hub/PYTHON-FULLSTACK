@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="data" type="text" placeholder="enter somthing" />
+    <h1 id="display"></h1>
+    <script>
+      let ele = document.getElementById("data");
+
+      ele.addEventListener("input", function (e) {
+        let dis = document.getElementById("dispaly");
+        dis.innerText= e.data;
+      });
+    </script>
+  </body>
+</html>

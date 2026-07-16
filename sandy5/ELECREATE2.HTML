@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      #list-items {
+        background-color: rgb(42, 42, 64);
+        width: 50vw;
+      }
+      #list-items > li {
+        color: white;
+        font-size: 30px;
+        list-style-type: upper-alpha;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="inputData" type="text" />
+    <button onclick="addEle()">add</button>
+    <ul id="list-items"></ul>
+    <script>
+      function addEle() {
+        let data = document.getElementById("inputData").value;
+
+        let btn = document.createElement("button");
+        btn.innerText = "X";
+
+        let item = document.createElement("li");
+        item.innerText = data + " ";
+        item.appendChild(btn);
+
+        let parentItem = document.getElementById("list-items");
+        parentItem.appendChild(item);
+
+        btn.addEventListener("click", function () {
+          parentItem.removeChild(item);
+        });
+      }
+    </script>
+  </body>
+</html>
