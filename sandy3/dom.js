@@ -1,0 +1,2 @@
+document.getElementById.value1
+document.getElementById

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="xyz" type="text" placeholder="Enter youer name: " /> <br />
+    <br />
+    <button onclick="show()">view</button>
+    <h1>Result</h1>
+    <p id="result">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae
+      dolor corporis non eum excepturi deserunt deleniti perferendis obcaecati
+      expedita.Illo, iure cupiditate neque officia laudantium vero maxime
+      provident officiis!
+    </p>
+    <script>
+      function show() {
+        //getting data
+        let name = document.getElementById("xyz").value;
+        //processing data
+        let res = " My Name is " + name;
+        //sending back processed data
+        document.getElementById("result").innerText = res;
+      }
+    </script>
+  </body>
+</html>

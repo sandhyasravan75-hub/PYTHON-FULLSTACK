@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="a1">Hello</h1>
+    <button onclick="changeDark()">dark</button>
+    <button onclick="changelight()">light</button>
+    <script>
+      function changeDark() {
+        document.body.style = "background-color: black";
+        document.getElementById("a1").style = "color:white";
+      }
+      function changelight() {
+        document.body.style = "background-color: white";
+        document.getElementById("a1").style = "color:black";
+      }
+    </script>
+  </body>
+</html>
